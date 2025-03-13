@@ -23,12 +23,16 @@
         text-decoration: none;
     }
 
-    #menu-links:hover{
+    .menu-links:hover{
         opacity: .7;
         transform: scale(1.2);
     }
 
-    #menu-links:active{
+    .menu-links:nth-child(1){
+        opacity: .7;
+    }
+
+    .menu-links:active{
         opacity: .5;
     }
 
