@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #12372A;
-    background-image: url(./assets/menu/backgorund.png);
+    background-image: url("/assets/images/background.png");
     background-size: cover;
     background-position: center;
     font-family: "Lexend Zetta", sans-serif; 
@@ -102,6 +102,12 @@ header {
     color: white;
 }
 
+.discount{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .burger-button:hover{
     opacity: .8;
     transform: scale(1.2);
@@ -109,4 +115,32 @@ header {
 
 .burger-button:active{
     opacity: .6;
+}
+
+ul{
+    margin-top: 80px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+li{
+    background: rgba(255, 255, 255, 0.1);
+    height: 180px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+li img{
+    width: 90px;
+    display: block;
+    margin: auto;
 }

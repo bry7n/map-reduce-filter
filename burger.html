@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger</title>
-    <link rel="stylesheet" href="./menu.css">
-    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="./assets/styles/menu.css">
 </head>
 <body>
     <header>
@@ -22,9 +21,17 @@
 
       <main class="menu-burger">
         <div class="main-menu">
-            <button type="button" class="burger-button">Full Menu</button>
+            <button type="button" class="burger-button" id="showAll">Full Menu</button>
             <button type="button" class="burger-button">Green Choice (Veggie)</button>
         </div>
+
+        <div class="discount">
+            <button type="button" class="burger-button" id="discountButton" style="display: none;">Click to get Discount</button>
+        </div>
+
+        <ul>
+        </ul>
       </main>
 </body>
+<script src="./assets/scripts/scripts.js"></script>
 </html>

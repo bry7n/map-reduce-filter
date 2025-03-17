@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #12372A;
-    background-image: url(./assets/menu/backgorund.png);
+    background-image: url("/assets/images/background.png");
     background-size: cover;
     background-position: center;
     font-family: "Lexend Zetta", sans-serif; 
