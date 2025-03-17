@@ -249,3 +249,21 @@ main {
         transform: translateY(0);
     }
 }
+
+.soon-text {
+    display: none; /* Oculta o texto por padrão */
+    color: rgba(255, 0, 0, 0.9); /* Vermelho suave */
+    font-size: 14px;
+    font-weight: bold;
+}
+.coming-soon:hover .soon-text {
+    display: block;
+}
+
+.coming-soon:hover p:first-of-type {
+    display: none;
+}
+
+.coming-soon:hover{
+    opacity: .6 ;
+}

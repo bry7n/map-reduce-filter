@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #12372A;
+    background-image: url(./assets/menu/backgorund.png);
+    background-size: cover;
+    background-position: center;
+    font-family: "Lexend Zetta", sans-serif; 
+}
+
+::selection{
+    background: transparent;
+}
+
+a, button{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-links:hover{
+    opacity: .7;
+    transform: scale(1.2);
+}
+
+.menu-links:nth-child(2){
+    opacity: .7;
+}
+
+.menu-links:active{
+    opacity: .5;
+}
+
+h1,h2,p,a{
+    color: white;
+}
+
+#header-h1{
+    font-size: 25px;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#header-h1 span:last-child{
+    margin-top: 2px;
+    align-self: flex-end;
+
+}
+
+header {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.menu-links {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-burger{
+    margin-top: 120px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.burger-button{
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 25px;
+    background-color: #21674e;
+    color: white;
+}
+
+.burger-button:hover{
+    opacity: .8;
+    transform: scale(1.2);
+}
+
+.burger-button:active{
+    opacity: .6;
+}
