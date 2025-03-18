@@ -14,24 +14,32 @@
         <div class="header-links">
           <a href="./index.html" class="menu-links">Home</a>
           <a href="./menu-items.html" class="menu-links">Menu</a>
-          <a class="menu-links">About</a>
-          <a class="menu-links">Shop</a>
+          <a href="./about-us.html" class="menu-links">About</a>
         </div>
       </header>
 
       <main class="menu-burger">
         <div class="main-menu">
             <button type="button" class="burger-button" id="showAll">Full Menu</button>
-            <button type="button" class="burger-button">Green Choice (Veggie)</button>
+            <button type="button" class="burger-button" id="showVeggie">Green Choice (Veggie)</button>
         </div>
+
+      </div>
 
         <div class="discount">
             <button type="button" class="burger-button" id="discountButton" style="display: none;">Click to get Discount</button>
+            <button type="button" class="burger-button" id="totalValue" style="display: none;">Show Total Value</button>
         </div>
 
         <ul>
         </ul>
       </main>
+
+      <div id="modal" class="hidden">
+        <div id="modal-content">
+            <p id="modal-text"></p>
+            <button id="closeModal">Fechar</button>
+        </div>
 </body>
 <script src="./assets/scripts/scripts.js"></script>
 </html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #12372A;
+    background-image: url("/assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    font-family: "Lexend Zetta", sans-serif; 
+}
+
+::selection{
+    background: transparent;
+}
+
+a{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-links:hover{
+    opacity: .7;
+    transform: scale(1.2);
+}
+
+.menu-links:nth-child(3){
+    opacity: .7;
+}
+
+.menu-links:active{
+    opacity: .5;
+}
+
+
+h1,h2,p,a{
+    color: white;
+}
+
+#header-h1{
+    font-size: 25px;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#header-h1 span:last-child{
+    margin-top: 2px;
+    align-self: flex-end;
+
+}
+
+header {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    width: 700px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+    padding: 20px; 
+}
+#container-h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#container-h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#container-p {
+    margin-top: 50px;
+    text-align: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.containerOne:hover {
+    background-color: #246d55;
+    transition-duration: 0.3s;
+}
+
+.containerFour:hover {
+    background-color: #246d55;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    }
+
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+#footer{
+    font-size: 12px;
+}
