@@ -164,7 +164,7 @@ li img{
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    visibility: hidden; /* Corrigido para começar invisível */
+    visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
